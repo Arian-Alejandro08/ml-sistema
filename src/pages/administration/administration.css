@@ -1,0 +1,8 @@
+.users-panel th:nth-child(n), .users-panel td:nth-child(n) { text-align: left; }
+.users-panel th:last-child, .users-panel td:last-child { text-align: right; }
+.users-panel td:nth-child(n+2) { font: 13px var(--body); }
+.users-panel .secondary-button { min-height: 32px; padding: 0 12px; font-size: 12px; }
+
+@media (max-width: 720px) {
+  .resource-summary { flex-wrap: wrap; }
+}

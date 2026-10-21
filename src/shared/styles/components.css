@@ -1,0 +1,23 @@
+/* Estilos reutilizables para formularios y acciones en páginas del panel. */
+.form-card { margin-bottom: 20px; padding: 22px 20px; }
+.form-card h3 { margin: 0 0 18px; font: 700 17px var(--display); }
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 20px; }
+.form-field { display: flex; min-width: 0; flex-direction: column; gap: 8px; }
+.form-field span { color: #697284; font: 400 9px var(--mono); letter-spacing: 1.5px; text-transform: uppercase; }
+.form-field input, .form-field select { width: 100%; height: 43px; padding: 0 12px; border: 1px solid var(--line); border-radius: 4px; background: white; color: var(--ink); font: 14px var(--body); }
+.form-field input:focus, .form-field select:focus { border-color: var(--red); outline: 0; }
+.form-error { margin: 16px 0 0; padding: 10px 12px; border-left: 3px solid var(--red); border-radius: 3px; background: #fdecee; color: #8f0f19; font-size: 13px; font-weight: 600; }
+.form-actions { display: flex; gap: 10px; margin-top: 20px; }
+.form-actions .primary-button { padding: 0 18px; }
+.primary-button:disabled { opacity: .85; cursor: progress; transform: none; }
+.secondary-button { min-height: 40px; padding: 0 18px; border: 1px solid var(--line); border-radius: 4px; background: white; color: var(--ink); font: 700 13px var(--body); cursor: pointer; }
+.secondary-button:hover:not(:disabled) { background: #f5f6f8; }
+.secondary-button:disabled { opacity: .6; cursor: not-allowed; }
+.tag-dot--active { background: var(--green); }
+.tag-dot--inactive { background: #9aa3b2; }
+
+@media (max-width: 720px) {
+  .form-grid { grid-template-columns: minmax(0, 1fr); }
+  .form-field input, .form-field select { height: 48px; font-size: 16px; }
+  .form-actions .primary-button, .form-actions .secondary-button { flex: 1; }
+}

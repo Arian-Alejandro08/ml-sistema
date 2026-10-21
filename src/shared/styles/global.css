@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  --red: #c91420;
+  --ink: #111318;
+  --muted: #778091;
+  --line: #dfe2e8;
+  --paper: #f3f4f6;
+  --green: #00a67d;
+  --mono: 'DM Mono', 'Courier New', monospace;
+  --display: 'Space Grotesk', 'DM Sans', sans-serif;
+  --body: 'DM Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.brand { display: flex; align-items: center; gap: 13px; }
+.brand__mark { display: grid; width: 36px; aspect-ratio: 1; place-items: center; border-radius: 5px; background: var(--red); color: white; font: 700 15px var(--display); }
+.brand__name { font-size: 17px; font-weight: 700; }
+.brand__name small { margin-top: 5px; color: #9298a4; font: 9px var(--mono); letter-spacing: 2px; }
+.eyebrow { margin: 0 0 11px; color: var(--red); font: 500 10px var(--mono); letter-spacing: 2.5px; }
+.primary-button { display: inline-flex; min-height: 40px; align-items: center; justify-content: center; gap: 9px; border: 0; border-radius: 4px; background: var(--red); color: white; font: 700 13px var(--body); cursor: pointer; transition: background .18s ease, transform .18s ease; }
+.primary-button:hover { transform: translateY(-1px); background: #a90f19; }
